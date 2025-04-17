@@ -3,7 +3,7 @@
 if(process.argv.length < 4) {
 	console.log("Transform log4j logger content into content size");
 	console.log("Usage: "+process.argv[0]+" "+process.argv[1]+" <prefix regex> <file.og> [file.log.1] ... [file.log.N]");
-	console.log(" e.g.: "+process.argv[0]+" "+process.argv[1]+" '[^ ]* (TRACE|DEBUG|INFO|WARN|ERROR) -' <file.og> [file.log.1] ... [file.log.N]");
+	console.log(" e.g.: "+process.argv[0]+" "+process.argv[1]+" '[^ ]* (TRACE|DEBUG|INFO|WARN|ERROR) [ ]*-' <file.og> [file.log.1] ... [file.log.N]");
 	process.exit();
 }
 
