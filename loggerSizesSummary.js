@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // To produce sorted results:
-// jq -r 'to_entries[] | .key + " " + (.value.sum | tostring)' | sort -k2n
+// jq -r 'to_entries[] | .key + " " + (.value.sum | tostring) + " " + (.value.count | tostring)' | sort -k3n
 
 if(process.argv.length < 4) {
 	console.log("Transform log4j logger content into content size");
